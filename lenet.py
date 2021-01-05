@@ -6,14 +6,14 @@ class LeNet5(nn.Module):
     """
     Input - 1x32x32
     C1 - 6@28x28 (5x5 kernel)
-    tanh
+    ReLU
     S2 - 6@14x14 (2x2 kernel, stride 2) Subsampling
     C3 - 16@10x10 (5x5 kernel, complicated shit)
-    tanh
+    ReLU
     S4 - 16@5x5 (2x2 kernel, stride 2) Subsampling
     C5 - 120@1x1 (5x5 kernel)
     F6 - 84
-    tanh
+    ReLU
     F7 - 10 (Output)
     """
     def __init__(self):
